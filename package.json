@@ -1,0 +1,21 @@
+{
+  "name": "web-test-runner-screenshot",
+  "version": "1.0.2",
+  "description": "",
+  "main": "browser/commands.mjs",
+  "exports": {
+    ".": "./browser/commands.mjs",
+    "./plugin": {
+      "import": "./plugin.mjs"
+    }
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Víctor Lara Ortega",
+  "license": "ISC",
+  "dependencies": {
+    "@web/test-runner-commands": "^0.6.1",
+    "mkdirp": "^1.0.4"
+  }
+}
