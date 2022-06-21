@@ -21,7 +21,7 @@ export function takeScreenshotPlugin() {
           if (session.browser.type === 'playwright') {
             const page = session.browser.getPage(session.id);
             const screenshot = await page.screenshot();
-            const sanitizedFileName = payload.name.replace('/', '-');
+            const sanitizedFileName = payload.name= payload.name.replaceAll('/', '-').replaceAll('"', `'`);
             await saveImage({ filePath: `./evidences/${sanitizedFileName}.png`, content: screenshot})
             return true;
           }
