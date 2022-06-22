@@ -36,7 +36,7 @@ Inside your test
       });
 ```
 
-Or make it automatically to every test in your beforeEach, based on the test title
+Or make it automatically to every test in your afterEach, based on the test title
 
 ```javascript
   afterEach(async function () { // Note that you can't use arrow function because you lose the currentTest context
