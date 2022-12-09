@@ -1,6 +1,6 @@
 {
   "name": "web-test-runner-screenshot",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "",
   "main": "browser/commands.mjs",
   "exports": {
@@ -14,6 +14,7 @@
   },
   "author": "Víctor Lara Ortega",
   "license": "ISC",
+  "registry": "https://registry.npmjs.org/",
   "dependencies": {
     "@web/test-runner-commands": "^0.6.1",
     "mkdirp": "^1.0.4"

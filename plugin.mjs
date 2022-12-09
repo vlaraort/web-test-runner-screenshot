@@ -23,7 +23,7 @@ export function takeScreenshotPlugin() {
             const destinationFolder = payload.folder || 'evidences'; 
             const screenshot = await page.screenshot();
             const sanitizedName = payload.name = payload.name.replaceAll('/', '-').replaceAll('"', `'`);
-            const sanitizedFileName = payload.browser ?  `${sanitizedName}_${session.browser.product}` : sanitizedName;
+            const sanitizedFileName = `${sanitizedName}_${session.browser.product}`;
             await saveImage({ filePath: `./${destinationFolder}/${sanitizedFileName}.png`, content: screenshot})
             return true;
           }
